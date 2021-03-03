@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             // below line is used for getting OTP code
             // which is sent in phone auth credentials.
             final String code = phoneAuthCredential.getSmsCode();
+            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
 
             // checking if the code
             // is null or not.
